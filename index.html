@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="styles/main.css" />
 </head>
 
+
 <body>
   <header class="header">
   <div class="container header__container grid">
@@ -100,21 +101,39 @@
       <h1 class="visually-hidden">SitDownPls-интернет-магазин мебели</h1>
       <div class="swiper hero__slider">
         <div class="swiper-wrapper">
-          <div class="swiper-slide hero__slide-1">
+          <div class="swiper-slide hero__slider-slide">
+            <picture class="hero__slider-picture">
+              <source srcset="img/hero-slide1-mobile.webp" media="(max-width:320px)" type="image/webp">
+              <source srcset="img/hero-slide1-tablet.webp" media="(max-width:1023px)" type="image/webp">
+              <source srcset="img/hero-slide1-laptop.webp" media="(max-width:1024px)" type="image/webp">
+              <img class="hero__slider-slide-img" src="img/hero-slide1.webp" alt="фоновое изображение 1">
+            </picture>
             <div class="container hero__slider-container">
               <h2 class="hero__slider-subheading">Скидка&nbsp;15% на&nbsp;первую покупку</h2>
               <button class="btn-reset btn btn-primary hero__slider-btn">Получить!</button>
             </div>
           </div>
-          <div class="swiper-slide hero__slide-2">
+          <div class="swiper-slide hero__slider-slide">
+            <picture class="hero__slider-picture">
+              <source srcset="img/hero-slide2-mobile.webp" media="(max-width:320px)" type="image/webp">
+              <source srcset="img/hero-slide2-tablet.webp" media="(max-width:1023px)" type="image/webp">
+              <source srcset="img/hero-slide2-laptop.webp" media="(max-width:1024px)" type="image/webp">
+              <img class="hero__slider-slide-img" src="img/hero-slide2.webp" alt="фоновое изображение 2">
+            </picture>
             <div class="container hero__slider-container">
               <h2 class="hero__slider-subheading">1000+ аксессуаров&nbsp;для дома</h2>
               <button class="btn-reset btn btn-primary hero__slider-btn">Подробнее</button>
             </div>
           </div>
-          <div class="swiper-slide hero__slide-3">
+          <div class="swiper-slide hero__slider-slide">
+            <picture class="hero__slider-picture">
+              <source srcset="img/hero-slide3-mobile.webp" media="(max-width:320px)" type="image/webp">
+              <source srcset="img/hero-slide3-tablet.webp" media="(max-width:1023px)" type="image/webp">
+              <source srcset="img/hero-slide3-laptop.webp" media="(max-width:1024px)" type="image/webp">
+              <img class="hero__slider-slide-img" src="img/hero-slide3.webp" alt="фоновое изображение 3">
+            </picture>
             <div class="container hero__slider-container">
-              <h2 class="hero__slider-subheading white-font">Коллекция стильного&nbsp; и яркого текстиля</h2>
+              <h2 class="hero__slider-subheading hero__slider-subheading_white">Коллекция стильного&nbsp; и яркого текстиля</h2>
               <button class="btn-reset btn btn-primary hero__slider-btn">Подробнее</button>
             </div>
           </div>
@@ -131,119 +150,132 @@
           <h2 class="section-subheading specials__subheading">Специальные предложения</h2>
           <div class="static-slider-btn">
             <button class="btn-reset swiper-button-prev arrow-in-circle-btn-prev specials__slider-btn-prev" aria-label="предыдущий слайд">
-              <svg class="small-arrow-icon" stroke="#A65CF0"><use xlink:href="img/sprite.svg#svg--arrow-icon"></use></svg>
+              <svg class="small-arrow-icon" stroke="#A65CF0"> <use xlink:href="img/sprite.svg#svg--arrow-icon"></use> </svg>
             </button>
             <button class="btn-reset swiper-button-next arrow-in-circle-btn-next specials__slider-btn-next" aria-label="следующий слайд">
-              <svg class="small-arrow-icon" stroke="#A65CF0"><use xlink:href="img/sprite.svg#svg--arrow-icon"></use></svg>
+              <svg class="small-arrow-icon" stroke="#A65CF0"> <use xlink:href="img/sprite.svg#svg--arrow-icon"></use> </svg>
             </button>
           </div>
         </div>
         <div class="swiper specials__slider">
           <div class="swiper-wrapper specials__slider-wrapper">
             <div class="swiper-slide specials__slide">
-              <article class="product-card specials__product">
+              <article class="product__card specials__product">
                 <div class="discount">
-                  <span class="white-font discount__text">-9000</span>
+                  <span class="discount__text">-9000</span>
                 </div>
                 <picture class="specials__product-img">
-                <img class="product-img" src="img/armchair-x-24.png" alt="диван">
-              </picture>
-                  <h3 class="card-subheading product-subheading specials__product-subheading">Кресло велюровое &nbsp;“X-24”</h3>
-                  <div class="specials__product-price">
-                    <span class="product-price specials__product-price-main">69 990 руб</span>
-                    <span class="product-price through-text">69&nbsp;990 руб</span>
-                  </div>
-                  <button class="btn-reset btn product-btn specials__product-btn">Купить</button>
+                  <img class="product__img" src="img/armchair-x-24.png" alt="диван">
+                </picture>
+                <h3 class="card-subheading product__subheading specials__product-subheading">Кресло велюровое &nbsp;“X-24”</h3>
+                <div class="specials__product-price">
+                  <span class="product__price specials__product-price-main">69&nbsp;990 руб</span>
+                  <span class="product__price through-text">69&nbsp;990 руб</span>
+                </div>
+                <div class="product__btn-content">
+                  <button class="btn-reset btn product__btn specials__product-btn">Купить</button>
+                </div>
               </article>
             </div>
-            <div class="swiper-slide specials__slide specials__slide-big">
-              <article class="product-card specials__product specials__product-big">
+            <div class="swiper-slide specials__slide specials__slide_big">
+              <article class="product__card specials__product specials__product_big">
                 <div class="discount">
-                  <span class="white-font discount__text">-10000</span>
+                  <span class="discount__text">-10000</span>
                 </div>
-                <picture class="specials__product-img specials__product-img-big">
-                <img class="product-img" src="img/sofa-z-44.png" alt="диван">
-              </picture>
-                  <h3 class="card-subheading product-subheading specials__product specials__product-subheading-big">Диван тканевый &nbsp;“Z-44”</h3>
-                  <div class="specials__product-price">
-                    <span class="product-price specials__product-price-main">69&nbsp;990 руб</span>
-                    <span class="product-price through-text">69&nbsp;990 руб</span>
-                  </div>
-                  <button class="btn-reset btn product-btn specials__product-btn">Купить</button>
-              </article>
-            </div>
-            <div class="swiper-slide specials__slide">
-              <article class="product-card specials__product">
-                <div class="discount">
-                  <span class="white-font discount__text">-600</span>
+                <picture class="specials__product-img specials__product-img_big">
+                  <img class="product__img" src="img/sofa-z-44.png" alt="диван">
+                </picture>
+                <h3 class="card-subheading product__subheading specials__product-subheading_big">Диван тканевый &nbsp;“Z-44”</h3>
+                <div class="specials__product-price">
+                  <span class="product__price specials__product-price-main">69&nbsp;990 руб</span>
+                  <span class="product__price through-text">69&nbsp;990 руб</span>
                 </div>
-                <picture class="specials__product-img">
-                <img class="product-img" src="img/alarm-quartz-23.png" alt="диван">
-              </picture>
-                  <h3 class="card-subheading product-subheading specials__product-subheading">Будильник “Quartz-&nbsp;23”</h3>
-                  <div class="specials__product-price">
-                    <span class="product-price specials__product-price-main">69&nbsp;990 руб</span>
-                    <span class="product-price through-text">69&nbsp;990 руб</span>
-                  </div>
-                  <button class="btn-reset btn product-btn specials__product-btn">Купить</button>
+                <div class="product__btn-content">
+                  <button class="btn-reset btn product__btn specials__product-btn">Купить</button>
+                </div>
               </article>
             </div>
             <div class="swiper-slide specials__slide">
-              <article class="product-card specials__product">
+              <article class="product__card specials__product">
                 <div class="discount">
-                  <span class="white-font discount__text">-9000</span>
+                  <span class="discount__text">-600</span>
                 </div>
                 <picture class="specials__product-img">
-                <img class="product-img" src="img/armchair-x-24.png" alt="диван">
-              </picture>
-                  <h3 class="card-subheading product-subheading">Кресло велюровое “X-&nbsp;24”</h3>
-                  <div class="specials__product-price">
-                    <span class="product-price specials__product-price-main">69&nbsp;990 руб</span>
-                    <span class="product-price through-text">69&nbsp;990 руб</span>
-                  </div>
-                  <button class="btn-reset btn product-btn">Купить</button>
-              </article>
-            </div>
-            <div class="swiper-slide specials__slide specials__slide-big">
-              <article class="product-card specials__product-big">
-                <div class="discount">
-                  <span class="white-font discount__text">-10000</span>
+                  <img class="product__img" src="img/alarm-quartz-23.png" alt="диван">
+                </picture>
+                <h3 class="card-subheading product__subheading specials__product-subheading">Будильник “Quartz-&nbsp;23”
+                </h3>
+                <div class="specials__product-price">
+                  <span class="product__price specials__product-price-main">69&nbsp;990 руб</span>
+                  <span class="product__price through-text">69&nbsp;990 руб</span>
                 </div>
-                <picture class="specials__product-img">
-                <img class="product-img" src="img/sofa-z-44.png" alt="диван">
-              </picture>
-                  <h3 class="card-subheading product-subheading">Диван тканевый “Z-&nbsp;44”</h3>
-                  <div class="specials__product-price">
-                    <span class="product-price specials__product-price-main">69&nbsp;990 руб</span>
-                    <span class="product-price through-text">69&nbsp;990 руб</span>
-                  </div>
-                  <button class="btn-reset btn product-btn">Купить</button>
+                <div class="product__btn-content">
+                  <button class="btn-reset btn product__btn specials__product-btn">Купить</button>
+                </div>
               </article>
             </div>
             <div class="swiper-slide specials__slide">
-              <article class="product-card specials__product">
+              <article class="product__card specials__product">
                 <div class="discount">
-                  <span class="white-font discount__text">-600</span>
+                  <span class="discount__text">-300</span>
                 </div>
                 <picture class="specials__product-img">
-                <img class="product-img " src="img/alarm-quartz-23.png" alt="будильник">
-              </picture>
-                  <h3 class="card-subheading product-subheading">Будильник “Quartz-&nbsp;23”</h3>
-                  <div class="specials__product-price-block">
-                    <span class="product-price specials__product-price-main">69&nbsp;990 руб</span>
-                    <span class="product-price through-text">69&nbsp;990 руб</span>
-                  </div>
-                  <button class="btn-reset btn product-btn">Купить</button>
+                  <img class="product__img" src="img/deer.webp" alt="статуэтка оленя">
+                </picture>
+                <h3 class="card-subheading product__subheading">Мини-скульптура “Oh my deer”</h3>
+                <div class="specials__product-price">
+                  <span class="product__price specials__product-price-main">690 руб</span>
+                  <span class="product__price through-text">990 руб</span>
+                </div>
+                <div class="product__btn-content">
+                  <button class="btn-reset btn product__btn">Купить</button>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide specials__slide specials__slide_big">
+              <article class="product__card specials__product specials__product_big">
+                <div class="discount">
+                  <span class="discount__text">-10000</span>
+                </div>
+                <picture class="specials__product-img">
+                  <img class="product__img" src="img/sofa_z-85.webp" alt="диван">
+                </picture>
+                <h3 class="card-subheading product__subheading specials__product-subheading_big">Диван вел-фок &nbsp;“Z-85”</h3>
+                <div class="specials__product-price">
+                  <span class="product__price specials__product-price-main">22&nbsp;990 руб</span>
+                  <span class="product__price through-text">32&nbsp;990 руб</span>
+                </div>
+                <div class="product__btn-content">
+                  <button class="btn-reset btn product__btn">Купить</button>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide specials__slide">
+              <article class="product__card specials__product">
+                <div class="discount">
+                  <span class="discount__text">-700</span>
+                </div>
+                <picture class="specials__product-img">
+                  <img class="product__img" src="img/thermometr.webp" alt="термометр">
+                </picture>
+                <h3 class="card-subheading product__subheading">Термометр + гидрометр &nbsp;“H-18”</h3>
+                <div class="specials__product-price">
+                  <span class="product__price specials__product-price-main">1&nbsp;390 руб</span>
+                  <span class="product__price through-text">2&nbsp;090 руб</span>
+                </div>
+                <div class="product__btn-content">
+                  <button class="btn-reset btn product__btn">Купить</button>
+                </div>
               </article>
             </div>
           </div>
         </div>
         <div class="static-slider-btn-mobile">
           <button class="btn-reset swiper-button-prev arrow-in-circle-btn-prev specials__slider-btn-prev" aria-label="предыдущий слайд">
-            <svg class="small-arrow-icon" stroke="#A65CF0"><use xlink:href="img/sprite.svg#svg--arrow-icon"></use></svg>
+            <svg class="small-arrow-icon" stroke="#A65CF0"> <use xlink:href="img/sprite.svg#svg--arrow-icon"></use> </svg>
           </button>
           <button class="btn-reset swiper-button-next arrow-in-circle-btn-next specials__slider-btn-next" aria-label="следующий слайд">
-            <svg class="small-arrow-icon" stroke="#A65CF0"><use xlink:href="img/sprite.svg#svg--arrow-icon"></use></svg>
+            <svg class="small-arrow-icon" stroke="#A65CF0"> <use xlink:href="img/sprite.svg#svg--arrow-icon"></use> </svg>
           </button>
         </div>
       </div>
@@ -253,242 +285,270 @@
         <h2 class="section-subheading popular__subheading">Высокий рейтинг</h2>
         <ul class="list-reset grid popular__list">
           <li class="popular__list-item">
-            <article class="product-card">
-              <div class="product-raiting">
-                <svg class="product-raiting-icon"><use xlink:href="img/sprite.svg#svg--star-icon"></use></svg>
-                <span class="product-raiting-value">5,0</span>
+            <article class="product__card">
+              <div class="product__raiting">
+                <svg class="product__raiting-icon"> <use xlink:href="img/sprite.svg#svg--star-icon"></use> </svg>
+                <span class="product__raiting-value">5,0</span>
               </div>
-                <picture class="product-card-picture">
-                  <source media="(max-width:576px)" srcset="img/sofa_r94-mobile.png" type="image/png">
-                  <img class="product-img" src="img/sofa_r94.png" alt="диван">
-                </picture>
-              <div class="product-card-content">
-                <h3 class="card-subheading product-subheading product-subheading-mobile">
+              <picture class="product__card-picture">
+                <source media="(max-width:576px)" srcset="img/sofa_r94-mobile.png" type="image/png">
+                <img class="product__img" src="img/sofa_r94.png" alt="диван">
+              </picture>
+              <div class="product__card-content">
+                <h3 class="card-subheading product__subheading product__subheading_mobile">
                   Диван кожаный
-                  <span class="product-model-number">“R-94”</span>
+                  <span class="product__model-number">“R-94”</span>
                 </h3>
-                <span class="product-price">94&nbsp;990 руб</span>
-                <button class="btn-reset btn product-btn product-btn-mobile">Купить</button>
+                <span class="product__price">94&nbsp;990 руб</span>
+                <div class="product__btn-content">
+                  <button class="btn-reset btn product__btn product__btn_mobile">Купить</button>
+                </div>
               </div>
             </article>
           </li>
           <li class="popular__list-item">
-            <article class="product-card">
-              <div class="product-raiting">
-                <svg class="product-raiting-icon"><use xlink:href="img/sprite.svg#svg--star-icon"></use></svg>
-                <span class="product-raiting-value">4,9</span>
+            <article class="product__card">
+              <div class="product__raiting">
+                <svg class="product__raiting-icon"> <use xlink:href="img/sprite.svg#svg--star-icon"></use> </svg>
+                <span class="product__raiting-value">4,9</span>
               </div>
-                <picture class="product-card-picture">
-                  <source media="(max-width:576px)" srcset="img/sofa_t75-mobile.png" type="image/png">
-                  <img class="product-img" src="img/sofa_t75.png" alt="диван">
-                </picture>
-              <div class="product-card-content">
-                <h3 class="card-subheading product-subheading product-subheading-mobile">
+              <picture class="product__card-picture">
+                <source media="(max-width:576px)" srcset="img/sofa_t75-mobile.png" type="image/png">
+                <img class="product__img" src="img/sofa_t75.png" alt="диван">
+              </picture>
+              <div class="product__card-content">
+                <h3 class="card-subheading product__subheading product__subheading_mobile">
                   Диван апартековый
-                  <span class="product-model-number">“T-75”</span>
+                  <span class="product__model-number">“T-75”</span>
                 </h3>
-                <span class="product-price">69&nbsp;990 руб</span>
-                <button class="btn-reset btn product-btn product-btn-mobile">Купить</button>
+                <span class="product__price">69&nbsp;990 руб</span>
+                <div class="product__btn-content">
+                  <button class="btn-reset btn product__btn product__btn_mobile">Купить</button>
+                </div>
               </div>
             </article>
           </li>
           <li class="popular__list-item">
-            <article class="product-card">
-              <div class="product-raiting">
-                <svg class="product-raiting-icon"><use xlink:href="img/sprite.svg#svg--star-icon"></use></svg>
-                <span class="product-raiting-value">4,8</span>
+            <article class="product__card">
+              <div class="product__raiting">
+                <svg class="product__raiting-icon"> <use xlink:href="img/sprite.svg#svg--star-icon"></use> </svg>
+                <span class="product__raiting-value">4,8</span>
               </div>
-                <picture class="product-card-picture">
-                  <source media="(max-width:576px)" srcset="img/sofa_d31-mobile.png" type="image/png">
-                  <img class="product-img" src="img/sofa_d31.png" alt="диван">
-                </picture>
-              <div class="product-card-content">
-                <h3 class="card-subheading product-subheading product-subheading-mobile">
+              <picture class="product__card-picture">
+                <source media="(max-width:576px)" srcset="img/sofa_d31-mobile.png" type="image/png">
+                <img class="product__img" src="img/sofa_d31.png" alt="диван">
+              </picture>
+              <div class="product__card-content">
+                <h3 class="card-subheading product__subheading product__subheading_mobile">
                   Диван тканевый
-                  <span class="product-model-number">“D-31”</span>
+                  <span class="product__model-number">“D-31”</span>
                 </h3>
-                <span class="product-price">28&nbsp;490 руб</span>
-                <button class="btn-reset btn product-btn product-btn-mobile">Купить</button>
+                <span class="product__price">28&nbsp;490 руб</span>
+                <div class="product__btn-content">
+                  <button class="btn-reset btn product__btn product__btn_mobile">Купить</button>
+                </div>
               </div>
             </article>
           </li>
           <li class="popular__list-item">
-            <article class="product-card">
-              <div class="product-raiting">
-                <svg class="product-raiting-icon"><use xlink:href="img/sprite.svg#svg--star-icon"></use></svg>
-                <span class="product-raiting-value">4,8</span>
+            <article class="product__card">
+              <div class="product__raiting">
+                <svg class="product__raiting-icon"> <use xlink:href="img/sprite.svg#svg--star-icon"></use> </svg>
+                <span class="product__raiting-value">4,8</span>
               </div>
-                <picture class="product-card-picture">
-                  <source media="(max-width:576px)" srcset="img/sofa_y68-mobile.png" type="image/png">
-                  <img class="product-img" src="img/sofa_y68.png" alt="диван">
-                </picture>
-              <div class="product-card-content">
-                <h3 class="card-subheading product-subheading product-subheading-mobile">
+              <picture class="product__card-picture">
+                <source media="(max-width:576px)" srcset="img/sofa_y68-mobile.png" type="image/png">
+                <img class="product__img" src="img/sofa_y68.png" alt="диван">
+              </picture>
+              <div class="product__card-content">
+                <h3 class="card-subheading product__subheading product__subheading_mobile">
                   Диван велюровый
-                  <span class="product-model-number">“Y-68”</span>
+                  <span class="product__model-number">“Y-68”</span>
                 </h3>
-                <span class="product-price">22&nbsp;990 руб</span>
-                <button class="btn-reset btn product-btn product-btn-mobile">Купить</button>
+                <span class="product__price">22&nbsp;990 руб</span>
+                <div class="product__btn-content">
+                  <button class="btn-reset btn product__btn product__btn_mobile">Купить</button>
+                </div>
               </div>
             </article>
           </li>
           <li class="popular__list-item">
-            <article class="product-card">
-              <div class="product-raiting">
-                <svg class="product-raiting-icon"><use xlink:href="img/sprite.svg#svg--star-icon"></use></svg>
-                <span class="product-raiting-value">4,8</span>
+            <article class="product__card">
+              <div class="product__raiting">
+                <svg class="product__raiting-icon"> <use xlink:href="img/sprite.svg#svg--star-icon"></use> </svg>
+                <span class="product__raiting-value">4,8</span>
               </div>
-                <picture class="product-card-picture">
-                  <source media="(max-width:576px)" srcset="img/sofa_w95-mobile.png" type="image/png">
-                  <img class="product-img" src="img/sofa_w95.png" alt="диван">
-                </picture>
-              <div class="product-card-content">
-                <h3 class="card-subheading product-subheading product-subheading-mobile">
+              <picture class="product__card-picture">
+                <source media="(max-width:576px)" srcset="img/sofa_w95-mobile.png" type="image/png">
+                <img class="product__img" src="img/sofa_w95.png" alt="диван">
+              </picture>
+              <div class="product__card-content">
+                <h3 class="card-subheading product__subheading product__subheading_mobile">
                   Диван из шинила
-                  <span class="product-model-number">“W-95”</span>
+                  <span class="product__model-number">“W-95”</span>
                 </h3>
-                <span class="product-price">22&nbsp;990 руб</span>
-                <button class="btn-reset btn product-btn product-btn-mobile">Купить</button>
+                <span class="product__price">22&nbsp;990 руб</span>
+                <div class="product__btn-content">
+                  <button class="btn-reset btn product__btn product__btn_mobile">Купить</button>
+                </div>
               </div>
             </article>
           </li>
           <li class="popular__list-item">
-            <article class="product-card">
-              <div class="product-raiting">
-                <svg class="product-raiting-icon"><use xlink:href="img/sprite.svg#svg--star-icon"></use></svg>
-                <span class="product-raiting-value">4,8</span>
+            <article class="product__card">
+              <div class="product__raiting">
+                <svg class="product__raiting-icon"> <use xlink:href="img/sprite.svg#svg--star-icon"></use> </svg>
+                <span class="product__raiting-value">4,8</span>
               </div>
-                <picture class="product-card-picture">
-                  <source media="(max-width:576px)" srcset="img/sofa_g41-mobile.png" type="image/png">
-                  <img class="product-img" src="img/sofa_g41.png" alt="диван">
-                </picture>
-              <div class="product-card-content">
-                <h3 class="card-subheading product-subheading product-subheading-mobile">
+              <picture class="product__card-picture">
+                <source media="(max-width:576px)" srcset="img/sofa_g41-mobile.png" type="image/png">
+                <img class="product__img" src="img/sofa_g41.png" alt="диван">
+              </picture>
+              <div class="product__card-content">
+                <h3 class="card-subheading product__subheading product__subheading_mobile">
                   Диван флоковый
-                  <span class="product-model-number">“G-41”</span>
+                  <span class="product__model-number">“G-41”</span>
                 </h3>
-                <span class="product-price">17&nbsp;990 руб</span>
-                <button class="btn-reset btn product-btn product-btn-mobile">Купить</button>
+                <span class="product__price">17&nbsp;990 руб</span>
+                <div class="product__btn-content">
+                  <button class="btn-reset btn product__btn product__btn_mobile">Купить</button>
+                </div>
               </div>
             </article>
           </li>
           <li class="popular__list-item">
-            <article class="product-card">
-              <div class="product-raiting">
-                <svg class="product-raiting-icon"><use xlink:href="img/sprite.svg#svg--star-icon"></use></svg>
-                <span class="product-raiting-value">4,8</span>
+            <article class="product__card">
+              <div class="product__raiting">
+                <svg class="product__raiting-icon"> <use xlink:href="img/sprite.svg#svg--star-icon"></use> </svg>
+                <span class="product__raiting-value">4,8</span>
               </div>
-                <picture class="product-card-picture">
-                  <source media="(max-width:576px)" srcset="img/sofa_v-43-mobile.png" type="image/png">
-                  <img class="product-img" src="img/sofa_v43.png" alt="диван">
-                </picture>
-              <div class="product-card-content">
-                <h3 class="card-subheading product-subheading product-subheading-mobile">
+              <picture class="product__card-picture">
+                <source media="(max-width:576px)" srcset="img/sofa_v-43-mobile.png" type="image/png">
+                <img class="product__img" src="img/sofa_v43.png" alt="диван">
+              </picture>
+              <div class="product__card-content">
+                <h3 class="card-subheading product__subheading product__subheading_mobile">
                   Диван шиниловый
-                  <span class="product-model-number">“V-43”</span>
+                  <span class="product__model-number">“V-43”</span>
                 </h3>
-                <span class="product-price">19&nbsp;990 руб</span>
-                <button class="btn-reset btn product-btn product-btn-mobile">Купить</button>
+                <span class="product__price">19&nbsp;990 руб</span>
+                <div class="product__btn-content">
+                  <button class="btn-reset btn product__btn product__btn_mobile">Купить</button>
+                </div>
               </div>
             </article>
           </li>
           <li class="popular__list-item">
-            <article class="product-card">
-              <div class="product-raiting">
-                <svg class="product-raiting-icon"><use xlink:href="img/sprite.svg#svg--star-icon"></use></svg>
-                <span class="product-raiting-value">4,8</span>
+            <article class="product__card">
+              <div class="product__raiting">
+                <svg class="product__raiting-icon"> <use xlink:href="img/sprite.svg#svg--star-icon"></use> </svg>
+                <span class="product__raiting-value">4,8</span>
               </div>
-                <picture class="product-card-picture">
-                  <source media="(max-width:576px)" srcset="img/sofa_s-99-mobile.png" type="image/png">
-                  <img class="product-img" src="img/sofa_s99.png" alt="диван">
-                </picture>
-              <div class="product-card-content">
-                <h3 class="card-subheading product-subheading product-subheading-mobile">
+              <picture class="product__card-picture">
+                <source media="(max-width:576px)" srcset="img/sofa_s-99-mobile.png" type="image/png">
+                <img class="product__img" src="img/sofa_s99.png" alt="диван">
+              </picture>
+              <div class="product__card-content">
+                <h3 class="card-subheading product__subheading product__subheading_mobile">
                   Диван велюровый
-                  <span class="product-model-number">“S-99”</span>
+                  <span class="product__model-number">“S-99”</span>
                 </h3>
-                <span class="product-price">19&nbsp;990 руб</span>
-                <button class="btn-reset btn product-btn product-btn-mobile">Купить</button>
+                <span class="product__price">19&nbsp;990 руб</span>
+                <div class="product__btn-content">
+                  <button class="btn-reset btn product__btn product__btn_mobile">Купить</button>
+                </div>
               </div>
             </article>
           </li>
           <li class="popular__list-item">
-            <article class="product-card">
-              <div class="product-raiting">
-                <svg class="product-raiting-icon"><use xlink:href="img/sprite.svg#svg--star-icon"></use></svg>
-                <span class="product-raiting-value">4,8</span>
+            <article class="product__card">
+              <div class="product__raiting">
+                <svg class="product__raiting-icon"> <use xlink:href="img/sprite.svg#svg--star-icon"></use> </svg>
+                <span class="product__raiting-value">4,8</span>
               </div>
-                <picture class="product-card-picture">
-                  <source media="(max-width:576px)" srcset="img/sofa_y68-mobile.png" type="image/png">
-                  <img class="product-img" src="img/sofa_y68.png" alt="диван">
-                </picture>
-              <div class="product-card-content">
-                <h3 class="card-subheading product-subheading product-subheading-mobile">
+              <picture class="product__card-picture">
+                <source media="(max-width:576px)" srcset="img/sofa_y68-mobile.png" type="image/png">
+                <img class="product__img" src="img/sofa_y68.png" alt="диван">
+              </picture>
+              <div class="product__card-content">
+                <h3 class="card-subheading product__subheading product__subheading_mobile">
                   Диван велюровый
-                  <span class="product-model-number">“Y-68”</span>
+                  <span class="product__model-number">“Y-68”</span>
                 </h3>
-                <span class="product-price">22&nbsp;990 руб</span>
-                <button class="btn-reset btn product-btn product-btn-mobile">Купить</button>
+                <span class="product__price">22&nbsp;990 руб</span>
+                <div class="product__btn-content">
+                  <button class="btn-reset btn product__btn product__btn_mobile">Купить</button>
+                </div>
               </div>
             </article>
           </li>
           <li class="popular__list-item">
-            <article class="product-card">
-              <div class="product-raiting">
-                <svg class="product-raiting-icon"> <use xlink:href="img/sprite.svg#svg--star-icon"></use> </svg>
-                <span class="product-raiting-value">4,8</span>
+            <article class="product__card">
+              <div class="product__raiting">
+                <svg class="product__raiting-icon">
+                  <use xlink:href="img/sprite.svg#svg--star-icon"></use>
+                </svg>
+                <span class="product__raiting-value">4,8</span>
               </div>
-                <picture class="product-card-picture">
-                  <source media="(max-width:576px)" srcset="img/sofa_y68-mobile.png" type="image/png">
-                  <img class="product-img" src="img/sofa_y68.png" alt="диван">
-                </picture>
-              <div class="product-card-content">
-                <h3 class="card-subheading product-subheading product-subheading-mobile">
+              <picture class="product__card-picture">
+                <source media="(max-width:576px)" srcset="img/sofa_y68-mobile.png" type="image/png">
+                <img class="product__img" src="img/sofa_y68.png" alt="диван">
+              </picture>
+              <div class="product__card-content">
+                <h3 class="card-subheading product__subheading product__subheading_mobile">
                   Диван велюровый
-                  <span class="product-model-number">“Y-68”</span>
+                  <span class="product__model-number">“Y-68”</span>
                 </h3>
-                <span class="product-price">22&nbsp;990 руб</span>
-                <button class="btn-reset btn product-btn product-btn-mobile">Купить</button>
+                <span class="product__price">22&nbsp;990 руб</span>
+                <div class="product__btn-content">
+                  <button class="btn-reset btn product__btn product__btn_mobile">Купить</button>
+                </div>
               </div>
             </article>
           </li>
           <li class="popular__list-item">
-            <article class="product-card">
-              <div class="product-raiting">
-                <svg class="product-raiting-icon"> <use xlink:href="img/sprite.svg#svg--star-icon"></use> </svg>
-                <span class="product-raiting-value">4,8</span>
+            <article class="product__card">
+              <div class="product__raiting">
+                <svg class="product__raiting-icon"> <use xlink:href="img/sprite.svg#svg--star-icon"></use> </svg>
+                <span class="product__raiting-value">4,8</span>
               </div>
-                <picture class="product-card-picture">
-                  <source media="(max-width:576px)" srcset="img/sofa_y68-mobile.png" type="image/png">
-                  <img class="product-img" src="img/sofa_y68.png" alt="диван">
-                </picture>
-              <div class="product-card-content">
-                <h3 class="card-subheading product-subheading product-subheading-mobile">
+              <picture class="product__card-picture">
+                <source media="(max-width:576px)" srcset="img/sofa_y68-mobile.png" type="image/png">
+                <img class="product__img" src="img/sofa_y68.png" alt="диван">
+              </picture>
+              <div class="product__card-content">
+                <h3 class="card-subheading product__subheading product__subheading_mobile">
                   Диван велюровый
-                  <span class="product-model-number">“Y-68”</span>
+                  <span class="product__model-number">“Y-68”</span>
                 </h3>
-                <span class="product-price">22&nbsp;990 руб</span>
-                <button class="btn-reset btn product-btn product-btn-mobile">Купить</button>
+                <span class="product__price">22&nbsp;990 руб</span>
+                <div class="product__btn-content">
+                  <button class="btn-reset btn product__btn product__btn_mobile">Купить</button>
+                </div>
               </div>
             </article>
           </li>
           <li class="popular__list-item">
-            <article class="product-card">
-              <div class="product-raiting">
-                <svg class="product-raiting-icon"> <use xlink:href="img/sprite.svg#svg--star-icon"></use> </svg>
-                <span class="product-raiting-value">4,8</span>
+            <article class="product__card">
+              <div class="product__raiting">
+                <svg class="product__raiting-icon">
+                  <use xlink:href="img/sprite.svg#svg--star-icon"></use>
+                </svg>
+                <span class="product__raiting-value">4,8</span>
               </div>
-                <picture class="product-card-picture">
-                  <source media="(max-width:576px)" srcset="img/sofa_y68-mobile.png" type="image/png">
-                  <img class="product-img" src="img/sofa_y68.png" alt="диван">
-                </picture>
-              <div class="product-card-content">
-                <h3 class="card-subheading product-subheading product-subheading-mobile">
+              <picture class="product__card-picture">
+                <source media="(max-width:576px)" srcset="img/sofa_y68-mobile.png" type="image/png">
+                <img class="product__img" src="img/sofa_y68.png" alt="диван">
+              </picture>
+              <div class="product__card-content">
+                <h3 class="card-subheading product__subheading product__subheading_mobile">
                   Диван велюровый
-                  <span class="product-model-number">“Y-68”</span>
+                  <span class="product__model-number">“Y-68”</span>
                 </h3>
-                <span class="product-price">22&nbsp;990 руб</span>
-                <button class="btn-reset btn product-btn product-btn-mobile">Купить</button>
+                <span class="product__price">22&nbsp;990 руб</span>
+                <div class="product__btn-content">
+                  <button class="btn-reset btn product__btn product__btn_mobile">Купить</button>
+                </div>
               </div>
             </article>
           </li>
@@ -501,12 +561,12 @@
         <source media="(min-width: 1921px)" srcset="img/banner-4k@2x.jpg">
         <source media="(max-width: 576px)" srcset="img/banner-mobile.jpg" type="image/jpg">
         <source media="(max-width: 768px)" srcset="img/banner-tablet.jpg" type="image/jpg">
-        <img class="banner__img" src="img/banner.jpg" alt="новая коллекция">
+        <img class="banner__img" src="img/banner.jpg" alt="новая коллекция мебели">
       </picture>
       <div class="container banner__container">
-          <h2 class="subheading banner__subheading">Оксфорд 1950</h2>
-          <p class="white-font banner__text">Новая коллекция изысканных кресел</p>
-          <button class="btn-reset btn btn-primary banner__btn">Ознакомиться</button>
+        <h2 class="subheading banner__subheading">Оксфорд 1950</h2>
+        <p class="banner__text">Новая коллекция изысканных кресел</p>
+        <button class="btn-reset btn btn-primary banner__btn">Ознакомиться</button>
       </div>
     </section>
     <section class="top-category">
@@ -519,13 +579,14 @@
               <li class="top-category__list-type-item"><a class="link-reset top-category__list-type-item-link" href="#">Угловые</a></li>
               <li class="top-category__list-type-item"><a class="link-reset top-category__list-type-item-link" href="#">Модульные</a></li>
             </ul>
-            <a class="link-reset top-category__link-mobile" href="#"><h3 class="text-reset card-subheading top-category__card-subheading-mobile">Диваны</h3>
-              <svg class="card-arrow-icon"><use xlink:href="img/sprite.svg#svg--small-arrow"></use></svg>
+            <a class="link-reset top-category__link-mobile" href="#">
+              <h3 class="text-reset card-subheading top-category__card-subheading-mobile">Диваны</h3>
+              <svg class="card-arrow-icon"> <use xlink:href="img/sprite.svg#svg--small-arrow"></use> </svg>
             </a>
             <h3 class="text-reset card-subheading top-category__card-subheading">Диваны</h3>
             <a class="link-reset in-catalog-link" href="/catalog.html">
               В каталог
-              <svg class="card-arrow-icon"><use xlink:href="img/sprite.svg#svg--small-arrow"></use></svg>
+              <svg class="card-arrow-icon"> <use xlink:href="img/sprite.svg#svg--small-arrow"></use> </svg>
             </a>
           </li>
           <li class="top-category__list-item top-category__list-item_big top-category__list-item-armchairs">
@@ -533,13 +594,14 @@
               <li class="top-category__list-type-item"><a class="link-reset top-category__list-type-item-link" href="#">Мягкие</a></li>
               <li class="top-category__list-type-item"><a class="link-reset top-category__list-type-item-link" href="#">Кресла-кровати</a></li>
             </ul>
-            <a class="link-reset top-category__link-mobile" href="#"><h3 class="text-reset card-subheading top-category__card-subheading-mobile">Кресла</h3>
-              <svg class="card-arrow-icon"><use xlink:href="img/sprite.svg#svg--small-arrow"></use></svg>
+            <a class="link-reset top-category__link-mobile" href="#">
+              <h3 class="text-reset card-subheading top-category__card-subheading-mobile">Кресла</h3>
+              <svg class="card-arrow-icon"> <use xlink:href="img/sprite.svg#svg--small-arrow"></use> </svg>
             </a>
             <h3 class="text-reset card-subheading top-category__card-subheading">Кресла</h3>
             <a class="link-reset in-catalog-link" href="/catalog.html">
               В каталог
-              <svg class="card-arrow-icon"><use xlink:href="img/sprite.svg#svg--small-arrow"></use></svg>
+              <svg class="card-arrow-icon"> <use xlink:href="img/sprite.svg#svg--small-arrow"></use> </svg>
             </a>
           </li>
           <li class="top-category__list-item top-category__list-item-beds">
@@ -547,13 +609,14 @@
               <li class="top-category__list-type-item"><a class="link-reset top-category__list-type-item-link" href="#">Односпальные</a></li>
               <li class="top-category__list-type-item"><a class="link-reset top-category__list-type-item-link" href="#">Двуспальные</a></li>
             </ul>
-            <a class="link-reset top-category__link-mobile" href="#"><h3 class="text-reset card-subheading top-category__card-subheading-mobile">Кровати</h3>
-              <svg class="card-arrow-icon"><use xlink:href="img/sprite.svg#svg--small-arrow"></use></svg>
+            <a class="link-reset top-category__link-mobile" href="#">
+              <h3 class="text-reset card-subheading top-category__card-subheading-mobile">Кровати</h3>
+              <svg class="card-arrow-icon"> <use xlink:href="img/sprite.svg#svg--small-arrow"></use> </svg>
             </a>
             <h3 class="text-reset card-subheading top-category__card-subheading">Кровати</h3>
             <a class="link-reset in-catalog-link" href="/catalog.html">
               В каталог
-              <svg class="card-arrow-icon"><use xlink:href="img/sprite.svg#svg--small-arrow"></use></svg>
+              <svg class="card-arrow-icon"> <use xlink:href="img/sprite.svg#svg--small-arrow"></use> </svg>
             </a>
           </li>
           <li class="top-category__list-item top-category__list-item-dressers">
@@ -561,13 +624,14 @@
               <li class="top-category__list-type-item"><a class="link-reset top-category__list-type-item-link" href="#">Тумбы</a></li>
               <li class="top-category__list-type-item"><a class="link-reset top-category__list-type-item-link" href="#">Комоды</a></li>
             </ul>
-            <a class="link-reset top-category__link-mobile" href="#"><h3 class="text-reset card-subheading top-category__card-subheading-mobile">Тумбы и комоды</h3>
-              <svg class="card-arrow-icon"><use xlink:href="img/sprite.svg#svg--small-arrow"></use></svg>
+            <a class="link-reset top-category__link-mobile" href="#">
+              <h3 class="text-reset card-subheading top-category__card-subheading-mobile">Тумбы и комоды</h3>
+              <svg class="card-arrow-icon"> <use xlink:href="img/sprite.svg#svg--small-arrow"></use> </svg>
             </a>
             <h3 class="text-reset card-subheading top-category__card-subheading">Тумбы и комоды</h3>
             <a class="link-reset in-catalog-link" href="/catalog.html">
               В каталог
-              <svg class="card-arrow-icon"><use xlink:href="img/sprite.svg#svg--small-arrow"></use></svg>
+              <svg class="card-arrow-icon"> <use xlink:href="img/sprite.svg#svg--small-arrow"></use> </svg>
             </a>
           </li>
           <li class="top-category__list-item top-category__list-item-chairs">
@@ -575,13 +639,14 @@
               <li class="top-category__list-type-item"><a class="link-reset top-category__list-type-item-link" href="#">Деревянные</a></li>
               <li class="top-category__list-type-item"><a class="link-reset top-category__list-type-item-link" href="#">Металлокаркас</a></li>
             </ul>
-            <a class="link-reset top-category__link-mobile" href="#"><h3 class="text-reset card-subheading top-category__card-subheading-mobile">Стулья</h3>
-              <svg class="card-arrow-icon"><use xlink:href="img/sprite.svg#svg--small-arrow"></use></svg>
+            <a class="link-reset top-category__link-mobile" href="#">
+              <h3 class="text-reset card-subheading top-category__card-subheading-mobile">Стулья</h3>
+              <svg class="card-arrow-icon"> <use xlink:href="img/sprite.svg#svg--small-arrow"></use> </svg>
             </a>
             <h3 class="text-reset card-subheading top-category__card-subheading">Стулья</h3>
             <a class="link-reset in-catalog-link" href="/catalog.html">
               В каталог
-              <svg class="card-arrow-icon"><use xlink:href="img/sprite.svg#svg--small-arrow"></use></svg>
+              <svg class="card-arrow-icon"> <use xlink:href="img/sprite.svg#svg--small-arrow"></use> </svg>
             </a>
           </li>
         </ul>
@@ -592,11 +657,17 @@
         <div class="section-header">
           <h2 class="section-subheading useful__subheading">Полезное</h2>
           <div class="static-slider-btn">
-            <button class="btn-reset swiper-button-prev arrow-in-circle-btn-prev useful__btn-prev" aria-label="предыдущий слайд">
-              <svg class="small-arrow-icon" stroke="#A65CF0"><use xlink:href="img/sprite.svg#svg--arrow-icon"></use></svg>
+            <button class="btn-reset swiper-button-prev arrow-in-circle-btn-prev useful__btn-prev"
+              aria-label="предыдущий слайд">
+              <svg class="small-arrow-icon" stroke="#A65CF0">
+                <use xlink:href="img/sprite.svg#svg--arrow-icon"></use>
+              </svg>
             </button>
-            <button class="btn-reset swiper-button-next arrow-in-circle-btn-next useful__btn-next" aria-label="следующий слайд">
-              <svg class="small-arrow-icon" stroke="#A65CF0"><use xlink:href="img/sprite.svg#svg--arrow-icon"></use></svg>
+            <button class="btn-reset swiper-button-next arrow-in-circle-btn-next useful__btn-next"
+              aria-label="следующий слайд">
+              <svg class="small-arrow-icon" stroke="#A65CF0">
+                <use xlink:href="img/sprite.svg#svg--arrow-icon"></use>
+              </svg>
             </button>
           </div>
         </div>
@@ -612,9 +683,10 @@
                 </picture>
                 <div class="useful__card-content">
                   <h3 class="card-subheading useful__card-subheading">
-                    И&nbsp;нет сомнений, что сделанные на&nbsp;базе интернет-аналитики выводы представляют собой не&nbsp;что иное?
+                    И&nbsp;нет сомнений, что сделанные на&nbsp;базе интернет-аналитики выводы представляют собой
+                    не&nbsp;что иное?
                   </h3>
-                  <button class="btn-reset btn product-btn useful__card-btn">Читать</button>
+                  <button class="btn-reset btn product__btn useful__card-btn">Читать</button>
                 </div>
               </article>
             </div>
@@ -630,7 +702,7 @@
                   <h3 class="card-subheading useful__card-subheading">
                     Как принято считать, некоторые особенности приносят несомненную пользу обществу?
                   </h3>
-                  <button class="btn-reset btn product-btn useful__card-btn">Читать</button>
+                  <button class="btn-reset btn product__btn useful__card-btn">Читать</button>
                 </div>
               </article>
             </div>
@@ -646,7 +718,7 @@
                   <h3 class="card-subheading useful__card-subheading">
                     Ясность нашей позиции очевидна: укрепление и&nbsp;развитие внутренней структуры?
                   </h3>
-                  <button class="btn-reset btn product-btn useful__card-btn">Читать</button>
+                  <button class="btn-reset btn product__btn useful__card-btn">Читать</button>
                 </div>
               </article>
             </div>
@@ -662,7 +734,7 @@
                   <h3 class="card-subheading useful__card-subheading">
                     Прежде всего, консультация с&nbsp;широким активом однозначно фиксирует необходимость распределения?
                   </h3>
-                  <button class="btn-reset btn product-btn useful__card-btn">Читать</button>
+                  <button class="btn-reset btn product__btn useful__card-btn">Читать</button>
                 </div>
               </article>
             </div>
@@ -678,7 +750,7 @@
                   <h3 class="card-subheading useful__card-subheading">
                     Как принято считать, некоторые особенности приносят несомненную пользу обществу?
                   </h3>
-                  <button class="btn-reset btn product-btn useful__card-btn">Читать</button>
+                  <button class="btn-reset btn product__btn useful__card-btn">Читать</button>
                 </div>
               </article>
             </div>
@@ -686,10 +758,10 @@
         </div>
         <div class="static-slider-btn-mobile">
           <button class="btn-reset swiper-button-prev arrow-in-circle-btn-prev useful__btn-prev" aria-label="предыдущий слайд">
-            <svg class="small-arrow-icon" stroke="#A65CF0"><use xlink:href="img/sprite.svg#svg--arrow-icon"></use></svg>
+            <svg class="small-arrow-icon" stroke="#A65CF0"> <use xlink:href="img/sprite.svg#svg--arrow-icon"></use> </svg>
           </button>
           <button class="btn-reset swiper-button-next arrow-in-circle-btn-next useful__btn-next" aria-label="следующий слайд">
-            <svg class="small-arrow-icon" stroke="#A65CF0"><use xlink:href="img/sprite.svg#svg--arrow-icon"></use></svg>
+            <svg class="small-arrow-icon" stroke="#A65CF0"> <use xlink:href="img/sprite.svg#svg--arrow-icon"></use> </svg>
           </button>
         </div>
       </div>
@@ -698,36 +770,38 @@
       <div class="container grid">
         <div class="we-glad__left">
           <h2 class="section-subheading we-glad__subheading">Мы всегда вам рады!</h2>
-          <p class="form-descr">Безусловно, новая модель организационной деятельности в значительной степени обусловливает важность распределения внутренних резервов и ресурсов.
+          <p class="form__descr">
+            Безусловно, новая модель организационной деятельности в значительной степени
+            обусловливает важность распределения внутренних резервов и ресурсов.
             <button class="btn-reset we-glad__tooltip" data-tippy-content="Реплицированные с зарубежных источников, исследования формируют глобальную сеть.">?</button>
           </p>
           <form class="we-glad__form main-form" action="post">
-            <label class="form-label">
-              <input class="form-input input-name" type="text" name="name" placeholder="Как вас зовут?" data-validate-field="name" aria-label="введите ваше имя">
+            <label class="form__label">
+              <input class="form__input input-name" type="text" name="name" placeholder="Как вас зовут?" data-validate-field="name" aria-label="введите ваше имя">
             </label>
-            <label class="form-label">
-              <input class="form-input input-phone" type="tel" name="phone" placeholder="Ваш телефон" data-validate-field="phone" aria-label="введите ваш телефон">
+            <label class="form__label">
+              <input class="form__input input-phone" type="tel" name="phone" placeholder="Ваш телефон" data-validate-field="phone" aria-label="введите ваш телефон">
             </label>
-            <label class="form-label">
-              <input class="form-input input-email" type="email" name="email" placeholder="Ваш e-mail" data-validate-field="email" aria-label="введите ваше эмейл">
+            <label class="form__label">
+              <input class="form__input input-email" type="email" name="email" placeholder="Ваш e-mail" data-validate-field="email" aria-label="введите ваше эмейл">
             </label>
-            <button class="btn-reset btn form-btn btn-disabled" type="submit">Отправить</button>
+            <button class="btn-reset btn form__btn btn-disabled" type="submit">Отправить</button>
             <div class="form-checkbox-wrap">
               <input class="visually-hidden custom-input-checkbox form-field" id="callback-form-checkbox" type="checkbox">
-              <label class="form-label form-checkbox custom-checkbox-content" for="callback-form-checkbox">
+              <label class="form__label form-checkbox custom-checkbox-content" for="callback-form-checkbox">
                 Принимаю&nbsp;<a class="agreement-link" href="#">пользовательское соглашение</a>
               </label>
             </div>
           </form>
         </div>
-          <picture class="we-glad__right">
-            <source srcset="img/we-glad-img-768.webp" type="image/webp" media="(max-width: 1023px)">
-            <source srcset="img/we-glad-img-768.png" type="image/png" media="(max-width: 1023px)">
-            <source srcset="img/we-glad-img-1024.webp" type="image/webp" media="(max-width: 1024px)">
-            <source srcset="img/we-glad-img-1024.png" type="image/png" media="(max-width: 1024px)">
-            <source srcset="img/we-glad-img.webp" type="image/webp">
-            <img class="we-glad__right-img" src="img/we-glad-img.png" alt="геометрические фигуры">
-          </picture>
+        <picture class="we-glad__right">
+          <source srcset="img/we-glad-img-768.webp" type="image/webp" media="(max-width: 1023px)">
+          <source srcset="img/we-glad-img-768.png" type="image/png" media="(max-width: 1023px)">
+          <source srcset="img/we-glad-img-1024.webp" type="image/webp" media="(max-width: 1024px)">
+          <source srcset="img/we-glad-img-1024.png" type="image/png" media="(max-width: 1024px)">
+          <source srcset="img/we-glad-img.webp" type="image/webp">
+          <img class="we-glad__right-img" src="img/we-glad-img.png" alt="геометрические фигуры">
+        </picture>
       </div>
     </section>
   </main>
@@ -815,14 +889,14 @@
   </div>
 </footer>
 
-      <div class="main-popup">
-        <img src="img/elephant-popup.png" alt="Оранжевый слон">
-        <p class="main-popup__text">Спасибо, мы вам перезвоним!</p>
-      </div>
+  <div class="main-popup">
+    <img src="img/elephant-popup.png" alt="Оранжевый слон">
+    <p class="main-popup__text">Спасибо, мы вам перезвоним!</p>
+  </div>
   <script src="https://unpkg.com/@popperjs/core@2"></script>
   <script src="https://unpkg.com/tippy.js@6"></script>
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 </body>
-</html>
 
+</html>

@@ -139,7 +139,7 @@ dropdownBtn.forEach(function (el, i) {
     ev.preventDefault();
     ev.stopPropagation();
     fnCloseAllDropdown(ev.target.nextElementSibling);
-    ev.target.nextElementSibling.classList.toggle("catalog__dropdown-list-visible");
+    ev.target.nextElementSibling.classList.toggle("catalog__mobile-dropdown-list-visible");
     dropdownBtn[i].classList.toggle("catalog__mobile-filters-btn-active");
   });
 });
@@ -161,7 +161,7 @@ function fnCloseAllDropdown(obj) {
 
 var formCheckLabel = document.querySelector(".form-field");
 var formCheckbox = document.querySelector(".form-field");
-var formBtnSubmit = document.querySelector(".form-btn");
+var formBtnSubmit = document.querySelector(".form__btn");
 var modalFormValidate = document.querySelector(".modal-form__form");
 var mainFormValidate = document.querySelector(".main-form");
 
@@ -524,10 +524,10 @@ var heroSlider = new Swiper('.hero__slider', {
     enabled: true,
     onlyInViewport: false
   },
-  autoplay: {
-    delay: 3200,
-    disableOnInteraction: false
-  },
+  // autoplay: {
+  //   delay: 3200,
+  //   disableOnInteraction: false,
+  // },
   a11y: {
     enabled: true,
     prevSlideMessage: 'Предыдущий слайд',
