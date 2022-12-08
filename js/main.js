@@ -123,7 +123,7 @@ var categorySelect = function categorySelect() {
   var formElement = document.querySelector('.header__form-select');
   var formChoices = new Choices(formElement, {
     searchEnabled: false,
-    // placeholder: true,
+    placeholder: true,
     itemSelectText: ''
   });
   var ariaLabel = element.getAttribute('aria-label');
@@ -524,10 +524,10 @@ var heroSlider = new Swiper('.hero__slider', {
     enabled: true,
     onlyInViewport: false
   },
-  // autoplay: {
-  //   delay: 3200,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 3200,
+    disableOnInteraction: false
+  },
   a11y: {
     enabled: true,
     prevSlideMessage: 'Предыдущий слайд',
